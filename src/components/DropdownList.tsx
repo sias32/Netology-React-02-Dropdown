@@ -10,7 +10,7 @@ const DropdownList: React.FC = React.memo(() => {
     'Help',
     'Log Out',
   ];
-  const [selectItem, setItem] = useState<string | null>(items[0]);
+  const [selectItem, setItem] = useState<string>(items[0]);
 
   const HandleClick: onSelectType = React.useCallback(
     (event) => setItem(event.currentTarget.text),
